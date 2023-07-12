@@ -78,9 +78,9 @@ void HTTPClient::GET(std::string url, ADDR_TYPE type) {
 		"Accept-Language: en-US,en;q=0.5\r\n"
 		"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Encoding: br;q=1.0, gzip;q=0.8, *;q=0.1\r\n"
 		"Accept: text/plain;q=0.8,image/png,*/*;q=0.5\r\nAccept-Charset: iso-8859-1\r\n"
-		"Referer: " + referer + "\r\n\r\n"
+		"Referer: " + referer + "\r\n"
 		"Host: " + url + "\r\n"
-		"User-Agent: " + user_agent + "\r\n";
+		"User-Agent: " + user_agent + "\r\n\r\n";
 		
 
 	char respBuff[1024];
